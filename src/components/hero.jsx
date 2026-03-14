@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Hero.css";
+import "./hero.css";
 
 const roles = ["Full Stack Developer", "UI/UX Designer", "IT Student"];
 

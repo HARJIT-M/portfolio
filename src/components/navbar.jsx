@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Navbar.css";
+import "./navbar.css";
 // import ThemeSwitcher from './themeswitcher.css';
 const links = ["Home", "About", "Projects", "Skills", "Contact"];
 

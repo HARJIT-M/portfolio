@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./Skills.css";
+import "./skills.css";
 
 const skills = [
   { name: "React.js",     pct: 85, cat: "Frontend" },

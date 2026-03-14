@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./About.css";
+import "./about.css";
 
 const facts = [
   { label: "Based in", value: "India" },

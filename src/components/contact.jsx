@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./Contact.css";
+import "./contact.css";
 
 const socials = [
   { label: "Email", value: "harjitrm@gmail.com", href: "mailto:harjitrm@gmail.com" },

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./Hobbies.css";
+import "./hobbies.css";
 
 const SPOTIFY_TRACKS = [
   {

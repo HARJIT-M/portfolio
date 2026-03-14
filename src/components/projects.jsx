@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./Projects.css";
+import "./projects.css";
 
 const projects = [
   {

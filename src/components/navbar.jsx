@@ -36,11 +36,16 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a  href="https://drive.google.com/file/d/19wIUex3HtzBJNurjPY6q0DtVgP2vtNBS/view?usp=drive_link"
+        {/* <a href="/resume.pdf" download="HARJIT-MAHENDRAN-RESUME.pdf" className="navbar-cta">
+          Resume <span className="cta-arrow">↗</span>
+        </a> */}
+        <a href="https://drive.google.com/file/d/19wIUex3HtzBJNurjPY6q0DtVgP2vtNBS/view"
      target="_blank"
      rel="noopener noreferrer"
-     className="navbar-cta">
-        </a>
+     className="navbar-cta"
+   >
+         Resume <span className="cta-arrow">↗</span>
+   </a>
       </div>
     </nav>
   );

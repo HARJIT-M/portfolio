@@ -36,7 +36,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="/resume.pdf" download className="navbar-cta">
+        <a href="/resume.pdf" download="HARJIT-MAHENDRAN-RESUME.pdf" className="navbar-cta">
           Resume <span className="cta-arrow">↗</span>
         </a>
       </div>

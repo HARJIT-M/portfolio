@@ -61,7 +61,7 @@ export default function Contact() {
               ))}
             </div>
 
-            <a href="/resume.pdf" download className="resume-download">
+            <a href="/resume.pdf" download="HARJIT-MAHENDRAN-RESUME.pdf" className="resume-download">
               <span className="rd-icon">↓</span>
               <div>
                 <p className="rd-title">Download Resume</p>

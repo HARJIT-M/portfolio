@@ -56,12 +56,12 @@ export default function Hero() {
 
         <div className="hero-stats">
           <div className="hero-stat">
-            <span className="stat-num">10+</span>
+            <span className="stat-num">3</span>
             <span className="stat-lbl">Projects</span>
           </div>
           <div className="hero-stat-div" />
           <div className="hero-stat">
-            <span className="stat-num">3+</span>
+            <span className="stat-num">3</span>
             <span className="stat-lbl">Years Coding</span>
           </div>
           <div className="hero-stat-div" />

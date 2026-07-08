@@ -61,13 +61,17 @@ export default function Contact() {
               ))}
             </div>
 
-            <a href="/resume.pdf" download="HARJIT-MAHENDRAN-RESUME.pdf" className="resume-download">
-              <span className="rd-icon">↓</span>
-              <div>
-                <p className="rd-title">Download Resume</p>
-                <p className="rd-sub">PDF · Updated 2025</p>
-              </div>
-            </a>
+            <a href="https://drive.google.com/file/d/19wIUex3HtzBJNurjPY6q0DtVgP2vtNBS/view?usp=drive_link"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="resume-download"
+>
+  <span className="rd-icon">↓</span>
+  <div>
+    <p className="rd-title">Download Resume</p>
+    <p className="rd-sub">PDF · Updated 2025</p>
+  </div>
+</a>
           </div>
 
           <div className={`contact-right ${visible ? "fade-up delay-2" : ""}`}>

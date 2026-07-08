@@ -1,15 +1,20 @@
 import { useEffect, useRef, useState } from "react";
+import {
+  SiReact, SiHtml5, SiFigma, SiNodedotjs,
+  SiMongodb, SiGit, SiCss3
+} from "react-icons/si";
+import { FaPaintBrush, FaJava } from "react-icons/fa";
 import "./skills.css";
 
 const skills = [
-  { name: "React.js",     pct: 85, cat: "Frontend" },
-  { name: "HTML & CSS",   pct: 90, cat: "Frontend" },
-  { name: "UI/UX Design", pct: 80, cat: "Frontend" },
-  { name: "Node.js",      pct: 75, cat: "Backend"  },
-  { name: "MongoDB",      pct: 70, cat: "Backend"  },
-  { name: "Java",         pct: 65, cat: "Backend"  },
-  { name: "Git & GitHub", pct: 80, cat: "Tooling"  },
-  { name: "Figma",        pct: 75, cat: "Tooling"  },
+  { name: "React.js",     icon: SiReact,      cat: "Frontend" },
+  { name: "HTML & CSS",   icon: SiHtml5,      cat: "Frontend" },
+  { name: "UI/UX Design", icon: FaPaintBrush, cat: "Frontend" },
+  { name: "Node.js",      icon: SiNodedotjs,  cat: "Backend"  },
+  { name: "MongoDB",      icon: SiMongodb,    cat: "Backend"  },
+  { name: "Java",         icon: FaJava,       cat: "Backend"  },
+  { name: "Git & GitHub", icon: SiGit,        cat: "Tooling"  },
+  { name: "Figma",        icon: SiFigma,      cat: "Tooling"  },
 ];
 
 const cats = ["All", "Frontend", "Backend", "Tooling"];
@@ -56,25 +61,22 @@ export default function Skills() {
         </div>
 
         <div className="skills-grid">
-          {filtered.map((s, i) => (
-            <div
-              key={s.name}
-              className={`skill-card ${visible ? "fade-up" : ""}`}
-              style={{ animationDelay: `${0.1 + i * 0.07}s` }}
-            >
-              <div className="skill-top">
+          {filtered.map((s, i) => {
+            const Icon = s.icon;
+            return (
+              <div
+                key={s.name}
+                className={`skill-card ${visible ? "fade-up" : ""}`}
+                style={{ animationDelay: `${0.1 + i * 0.07}s` }}
+              >
+                <div className="skill-icon">
+                  <Icon />
+                </div>
                 <span className="skill-name">{s.name}</span>
-                <span className="skill-pct">{s.pct}%</span>
+                <span className="skill-cat">{s.cat}</span>
               </div>
-              <div className="skill-track">
-                <div
-                  className="skill-fill"
-                  style={{ width: visible ? `${s.pct}%` : "0%" }}
-                />
-              </div>
-              <span className="skill-cat">{s.cat}</span>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>

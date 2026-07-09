@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import {
   SiReact, SiHtml5, SiFigma, SiNodedotjs,
-  SiMongodb, SiGit, SiCss3
+  SiMongodb, SiGit,
 } from "react-icons/si";
 import { FaPaintBrush, FaJava } from "react-icons/fa";
 import "./skills.css";

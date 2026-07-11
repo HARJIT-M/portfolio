@@ -3,9 +3,8 @@ import "./about.css";
 
 const facts = [
   { label: "Based in", value: "India" },
-  { label: "Degree", value: "B.Tech IT — Year 3" },
+  { label: "Degree", value: "B.Tech IT — Year IV" },
   { label: "Focus", value: "Fullstack + Design" },
-  { label: "Status", value: "Open to Work", highlight: true },
 ];
 
 const interests = ["React", "Node.js", "MongoDB", "Figma", "DSA", "System Design"];
@@ -39,7 +38,7 @@ export default function About() {
               <span className="title-accent">real experiences</span>
             </h2>
             <p className="about-body">
-              I'm Harjit — a third-year IT student with a passion for building
+              I'm Harjit — a Final-year IT student with a passion for building
               things that live on the web. I care deeply about the intersection
               of engineering and design: code that's clean, interfaces that
               feel intuitive, and products that solve real problems.
@@ -54,25 +53,43 @@ export default function About() {
                 <span className="interest-tag" key={tag}>{tag}</span>
               ))}
             </div>
+
+            <blockquote className="pull-quote">
+              Code is design. Every function is a decision about the user.
+            </blockquote>
           </div>
 
           <div className={`about-right ${visible ? "fade-up delay-2" : ""}`}>
-            <div className="about-card">
-              {facts.map((f) => (
-                <div className="fact-row" key={f.label}>
-                  <span className="fact-label">{f.label}</span>
-                  <span className={`fact-value ${f.highlight ? "highlight" : ""}`}>
-                    {f.highlight && <span className="fact-dot" />}
-                    {f.value}
-                  </span>
-                </div>
-              ))}
-            </div>
+            <div className="id-card-wrap">
+              <div className="id-card">
+                <div className="id-card-band" />
 
-            <div className="about-quote-card">
-              <p className="quote-text">
-                "Code is design. Every function is a decision about the user."
-              </p>
+                <div className="id-avatar">HM</div>
+
+                <div className="id-name">Harjit Mahendran</div>
+                <div className="id-role">Full Stack Developer</div>
+
+                <div className="id-divider" />
+
+                <div className="id-facts">
+                  {facts.map((f) => (
+                    <div className="id-fact-row" key={f.label}>
+                      <span className="id-fact-label">{f.label}</span>
+                      <span className="id-fact-value">{f.value}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="id-status">
+                  <span className="id-status-dot" />
+                  Open to Work
+                </div>
+
+                <div className="id-barcode">
+                  <div className="barcode-stripes" />
+                  <span className="id-number">ID · HM—2026</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>

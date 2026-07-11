@@ -15,10 +15,10 @@ const projects = [
     title: "Internship Evaluation System",
     desc: "A platform where team leaders assign projects, track intern progress, and evaluate performance with structured scoring.",
     stack: ["React", "Express", "MongoDB"],
-    tag: "Dashboard",
-    status: "Complete",
+    tag: "Full stack",
+    status: "Live",
     github: "https://github.com/HARJIT-M/internship_evaluation_system",
-    demo: null,
+    demo: "https://internshipevaluationsystem.vercel.app/",
   },
   {
   title: "3Games",
